@@ -19,6 +19,7 @@ Welcome to Installfest, your first hands-on experience in setting up a developme
 | [Ubuntu](./ubuntu/README.md)                                               | -- | -- | Configuring a development environment in Ubuntu.     |
 | [VS code](./vs-code/README.md)                                             | -- | -- | Download and setup VS Code.                          |
 | [Github: Personal Access Tokens](./github-personal-access-token/README.md) | -- | -- | Setup a personal access token in GitHub.             |
+| [Github: SSH Auth](./github-ssh/README.md) | -- | -- | Setup SSH Auth in GitHub.             |
 | **Total content**                                                          | -- | -- |                                                      |
 
 ## Internal resources
