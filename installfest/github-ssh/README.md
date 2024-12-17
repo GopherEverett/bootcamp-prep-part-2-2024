@@ -42,7 +42,7 @@ To complete this setup, follow the instructions starting from Step 2 at this lin
 To check your installation, run:
 
 ```bash
-ssh git@github.com
+ssh -T git@github.com
 ```
 
 You should see output similar to:
@@ -57,7 +57,7 @@ Hi <you>! You've successfully authenticated, but GitHub does not provide shell a
 To create a SSH key, enter the following command in your terminal:
 
 ```sh
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
 **NOTE**: Be sure to replace `your_email@example.com` with the email that you have registered with GitHub.
@@ -80,13 +80,13 @@ eval "$(ssh-agent -s)"
 Now enter the following command into your terminal:
 
 ```sh
-ssh-add ~/.ssh/id_rsa.pub
+ssh-add ~/.ssh/id_ed25519.pub
 ```
 
 Now let's make your new ssh key visible in the terminal by entering the following command into your terminal:
 
 ```sh
-cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_ed25519.pub
 ```
 
 Now we can copy our SSH key by selecting the output of that command and using for the next step below.
