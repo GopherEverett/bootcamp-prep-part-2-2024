@@ -5,7 +5,7 @@ In order for GitHub to deem our machines as "safe" to push code, we need to setu
 Enter the following commands in your terminal, with your ***own*** information inserted:
 
 ```sh
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
 The above email ***must*** be your GitHub email!
@@ -34,7 +34,7 @@ eval "$(ssh-agent -s)"
 Now copy the ssh key to your clipboard with this command:
 
 ```sh
-pbcopy < ~/.ssh/id_rsa.pub
+pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
 To complete this setup, follow the instructions starting from Step 2 at this link **[HERE](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)**.
@@ -49,7 +49,6 @@ You should see output similar to:
 
 ```
 Hi <you>! You've successfully authenticated, but GitHub does not provide shell access.
-Connection to github.com closed.
 ```
 
 ## Setting Up GitHub SSH Authentication on Windows/Ubuntu
